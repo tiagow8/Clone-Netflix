@@ -1,0 +1,139 @@
+:root {
+  --vermelho: #e50914;
+  --preto: #141414;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Elementos Base*/
+body {
+  background: var(--preto);
+  font-family: "Arial", Times, serif;
+  color: #ffffff;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 100px;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+}
+
+header .logo img {
+  max-width: 160px;
+}
+
+header nav a {
+  text-decoration: none;
+  color: #aaa;
+  margin-right: 10px;
+  font-weight: 600;
+}
+
+header nav a:hover {
+  color: #ff0000;
+}
+
+/*Filme Principal */
+.filme-principal {
+  font-size: 16px;
+  background: url("img/Capa.outravida.jpg");
+
+  height: 400px;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.subtexto span i:last-child {
+  background: #e50914;
+  padding: 0 8px;
+  display: inline-block;
+  font-style: normal;
+  border-radius: 2px;
+}
+
+.subtexto span {
+  padding: 0 10px;
+  border-right: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.filme-principal .descricao {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  font-size: 1em;
+  font-weight: 300;
+  line-height: 1.5em;
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.subtexto span:first-child {
+  padding-left: 0;
+}
+
+.subtexto span:last-child {
+  border-right: none;
+}
+
+.filme-principal .titulo {
+  margin-top: 15%;
+  font-size: 40px;
+
+  font-family: "Cardo", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+    Arial, sans-serif;
+}
+
+.botao {
+  border: none;
+  color: #fff;
+  background: #f71010;
+  padding: 10px 20px;
+  margin-right: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: 0.3s ease all;
+  display: inline-block;
+  position: relative;
+}
+
+.botao:hover {
+  background-color: #000000;
+  color: #fff;
+}
+
+.botao i {
+  margin-right: 8px;
+}
+
+.container {
+  margin-left: 20px;
+}
+
+.filme-principal .container {
+  width: 70%;
+}
+
+.box-filme {
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+
+.carrosel-filmes {
+  margin-top: 5px;
+}
